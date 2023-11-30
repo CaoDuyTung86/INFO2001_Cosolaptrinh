@@ -86,7 +86,7 @@ int main() {
             return 0;
     }
     for (i = 0; i < n; i++) {
-        printf("ID: %d,Tên: %s, Ği?m: %.2f\n", students[i].id, students[i].name, students[i].score);
+        printf("ID: %d,TÃªn: %s, Ãi?m: %.2f\n", students[i].id, students[i].name, students[i].score);
     }
     char searchName[50];
     int searchId;
