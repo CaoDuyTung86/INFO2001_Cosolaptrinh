@@ -4,7 +4,7 @@
 
 #define MAX_EMPLOYEES 100
 
-// C?u trúc Employee
+// C?u trÃºc Employee
 typedef struct {
     int employeeId;
     char name[50];
@@ -12,11 +12,11 @@ typedef struct {
     float salary;
 } Employee;
 
-// M?ng ch?a danh sách nhân viên
+// M?ng ch?a danh sÃ¡ch nhÃ¢n viÃªn
 Employee employeeList[MAX_EMPLOYEES];
 int numEmployees = 0;
 
-// Ch?c nang thêm nhân viên
+// Ch?c nang thÃªm nhÃ¢n viÃªn
 void addEmployee() {
     if (numEmployees >= MAX_EMPLOYEES) {
         printf("Danh sach nhan vien da day. Khong the them nua.\n");
@@ -39,7 +39,7 @@ void addEmployee() {
     printf("Them nhan vien thanh cong.\n");
 }
 
-// Ch?c nang xóa nhân viên
+// Ch?c nang xÃ³a nhÃ¢n viÃªn
 void removeEmployee() {
     int employeeId;
     printf("Nhap ma nhan vien can xoa: ");
@@ -67,7 +67,7 @@ void removeEmployee() {
     printf("Xoa nhan vien thanh cong.\n");
 }
 
-// Ch?c nang hi?n th? danh sách nhân viên
+// Ch?c nang hi?n th? danh sÃ¡ch nhÃ¢n viÃªn
 void displayEmployees() {
     if (numEmployees == 0) {
         printf("Danh sach nhan vien rong.\n");
@@ -82,7 +82,7 @@ void displayEmployees() {
     }
 }
 
-// Hàm so sánh d? s?p x?p nhân viên theo mã nhân viên
+// HÃ m so sÃ¡nh d? s?p x?p nhÃ¢n viÃªn theo mÃ£ nhÃ¢n viÃªn
 int compareEmployee(const void* a, const void* b) {
     Employee* employeeA = (Employee*)a;
     Employee* employeeB = (Employee*)b;
@@ -90,7 +90,7 @@ int compareEmployee(const void* a, const void* b) {
     return employeeA->employeeId - employeeB->employeeId;
 }
 
-// Ch?c nang s?p x?p nhân viên theo mã nhân viên
+// Ch?c nang s?p x?p nhÃ¢n viÃªn theo mÃ£ nhÃ¢n viÃªn
 void sortEmployees() {
     if (numEmployees == 0) {
         printf("Danh sach nhan vien rong.\n");
